@@ -102,7 +102,7 @@ input {
 }
 .discription{
   opacity: 0;
-  font-size: 20px;
+  font-size: 40px;
   line-height: 2rem;
   transition: all 0.6s;
 }
