@@ -69,6 +69,7 @@ input {
 .slider__btn-container {
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 1rem;
   justify-content: flex-end;
 }
@@ -97,30 +98,15 @@ input {
 }
 .slider__discription-container {
   font-size: 1rem;
-  height: 2rem;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
+  justify-content: space-between;
 }
 .discription{
-  opacity: 0;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 2rem;
   transition: all 0.6s;
-}
-#slider-1:checked ~ .slider__discription-container .slid-1 {
-  opacity: 1;
-  transform: translateY(0);
-}
-#slider-2:checked ~ .slider__discription-container .slid-2 {
-  opacity: 1;
-  transform: translateY(-2rem);
-}
-#slider-3:checked ~ .slider__discription-container .slid-3 {
-  opacity: 1;
-  transform: translateY(-4rem);
-}
-#slider-4:checked ~ .slider__discription-container .slid-4 {
-  opacity: 1;
-  transform: translateY(-6rem);
 }
 
 @media screen and (max-width: 430px) {
